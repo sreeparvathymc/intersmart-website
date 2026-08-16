@@ -27,14 +27,14 @@ const Button = ({
 
   if (link) {
     return (
-      <Link href={link} className={`${buttonClass} text-base`}>
+      <Link href={link} className={`${buttonClass} text-base transition-all duration-300`}>
         {text}
       </Link>
     );
   }
 
   return (
-    <button type={type} className={`${buttonClass} text-base `}>
+    <button type={type} className={`${buttonClass} text-base transition-all duration-300 `}>
       {text}
     </button>
   );

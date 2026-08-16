@@ -6,7 +6,7 @@ import Button from "../ReusableComponents/Buttons/Button";
 
 const AiServices = () => {
   return (
-    <div className="py-[54px] md:py-16 xl:py-25">
+    <section className="py-[54px] md:py-[75px] xl:py-25">
       <div className="container-custom">
         <SectionIntro
           introTitle="Our Artificial Intelligence Services"
@@ -14,30 +14,40 @@ const AiServices = () => {
           textclass="max-w-[647px] mx-auto"
         />
 
-        <div className="w-full flex flex-wrap justify-between items-center">
-
-
-          <div className="w-[calc(100%_-_600px)">
-            <Image src={image1} alt="img" width={200} height={400} />
+        <div className="w-full flex flex-wrap  justify-between my-8 sm:my-10 md:my-14">
+          {/* Left Illustration Graphic */}
+          <div className=" flex  items-center xl:w-[calc(100%_-690px)] md:w-[45%]  w-[80%] mx-auto md:mx-0 mb-5 md:mb-0">
+            <div className="relative w-full ">
+              <Image
+                src={image1}
+                alt="AI Services Graphic"
+                width={600}
+                height={600}
+                className="w-full h-auto object-contain mx-auto"
+                priority
+              />
+            </div>
           </div>
 
-          <div className="w-[500px]">
+          {/* Right Accordion List */}
+          <div className="xl:w-[592px] md:w-[54%]">
             <AccordionServices />
           </div>
-
-
-
         </div>
 
-
-
-
-        <div className="flex justify-center flex-wrap">
-          <Button text="View all services" link="/" varient="primary" />
+        {/* View All Services Button */}
+        <div className="mt-8 sm:mt-12 flex justify-center">
+          <Button
+            text="View all services"
+            link="/"
+            varient="primary"
+            className="px-6 py-3 text-sm sm:text-base font-medium"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default AiServices;
+

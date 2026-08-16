@@ -10,26 +10,26 @@ const items = [
   {
     title: "AI Consultation",
     content:
-      "Our AI experts provide consultation to help you identify the right AI solutions and strategies for your business requirements.",
+      "Our AI experts handle your hyperparameter tuning, optimizing your unique machine-learning model optimization requirements.",
   },
   {
     title: "NLP Solutions",
     content:
-      "We develop natural language processing solutions that help businesses understand, process, and work with human language.",
+      "Our AI experts handle your hyperparameter tuning, optimizing your unique machine-learning model optimization requirements. ",
   },
   {
     title: "Custom AI Model Development",
     content:
-      "We build custom AI models designed around your specific business requirements and use cases.",
+      "Our AI experts handle your hyperparameter tuning, optimizing your unique machine-learning model optimization requirements.",
   },
 ];
 
 const AccordionServices = () => {
   return (
-    <div>
+    <div className="">
       <Accordion items={items} />
 
-     
+
     </div>
   );
 };
