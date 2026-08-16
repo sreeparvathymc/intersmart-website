@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -15,9 +13,6 @@ const navItems = [
   { name: "About us", href: "/" },
 ];
 
-/* ==========================================================================
-   Desktop Menu Component
-   ========================================================================== */
 const DesktopHeader = ({
   navItems,
 }: {
@@ -37,24 +32,16 @@ const DesktopHeader = ({
         ))}
       </nav>
 
-
-
       <Button
-      text="Get in touch"
-      varient="secondary"
-      className="12 font-medium xl:text-base md:text-sm lg:px-6 lg:py-3 md:px-4 md:py-3  "
-      link="/"
-
+        text="Get in touch"
+        varient="secondary"
+        className="12 font-medium xl:text-base md:text-sm lg:px-6 lg:py-3 md:px-4 md:py-3  "
+        link="/"
       />
-
-
     </div>
   );
 };
 
-/* ==========================================================================
-   Mobile Menu Slider Component (Full Width, Slide from Right)
-   ========================================================================== */
 const MobileMenuDrawer = ({
   isOpen,
   onClose,
@@ -64,7 +51,6 @@ const MobileMenuDrawer = ({
   onClose: () => void;
   navItems: { name: string; href: string }[];
 }) => {
-  // Prevent body scroll when drawer is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -82,12 +68,8 @@ const MobileMenuDrawer = ({
         isOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
       }`}
     >
-      {/* Top Header inside Drawer */}
       <div className="flex items-center justify-between border-b border-gray-800 pb-4">
-
-
-
-        <Link href="/" >
+        <Link href="/">
           <Image
             src="/images/logo.png"
             alt="Inter Smart Logo"
@@ -96,9 +78,6 @@ const MobileMenuDrawer = ({
             className="w-auto  h-7 sm:h-8 md:h-7 lg:h-10 object-contain"
           />
         </Link>
-
-
-
 
         <button
           onClick={onClose}
@@ -135,17 +114,11 @@ const MobileMenuDrawer = ({
         ))}
       </nav>
 
-      {/* CTA at Bottom of Drawer */}
-      <div className="pt-4 border-t border-gray-800">
-
-      </div>
+      <div className="pt-4 border-t border-gray-800"></div>
     </div>
   );
 };
 
-/* ==========================================================================
-   Main Header Component
-   ========================================================================== */
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -185,18 +158,15 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Menu Section */}
           <DesktopHeader navItems={navItems} />
 
-          {/* Mobile Header Controls (Get in Touch Button + Hamburger Toggle) */}
           <div className="ft md:hidden flex items-center space-x-3">
             <Button
-      text="Get in touch"
-      varient="secondary"
-      className=" font-medium min-[320px]:max-[400px]:text-[12px] min-[320px]:max-[400px]:mr-[5px] text-sm xl:text-base md:text-sm lg:px-6 lg:py-3 md:px-4 md:py-3  py-2.5 px-5"
-      link="/"
-
-      />
+              text="Get in touch"
+              varient="secondary"
+              className=" font-medium min-[320px]:max-[400px]:text-[12px] min-[320px]:max-[400px]:mr-[5px] text-sm xl:text-base md:text-sm lg:px-6 lg:py-3 md:px-4 md:py-3  py-2.5 px-5"
+              link="/"
+            />
 
             <button
               onClick={() => setIsMobileMenuOpen(true)}
@@ -221,7 +191,6 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Menu Slider Section (Full-width slide from right) */}
       <MobileMenuDrawer
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}

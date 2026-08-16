@@ -29,7 +29,7 @@ const Accordion = ({ items }: AccordionProps) => {
             key={item.title}
             className="overflow-hidden rounded-xl bg-[#f7f7f7] transition-all duration-300 "
           >
-            {/* Header */}
+           
             <button
               type="button"
               onClick={() => handleToggle(index)}
@@ -38,8 +38,7 @@ const Accordion = ({ items }: AccordionProps) => {
               <span className="text-base sm:text-lg md:text-lg lg:text-[22px] font-medium text-[#151827]">
                 {item.title}
               </span>
-
-              {/* Arrow SVG Container */}
+              \{" "}
               <div
                 className={`w-3 h-3 flex items-center justify-center flex-shrink-0 transition-transform duration-300 ease-in-out ${
                   isActive ? "rotate-0" : "rotate-270"
@@ -54,8 +53,7 @@ const Accordion = ({ items }: AccordionProps) => {
                 />
               </div>
             </button>
-
-            {/* Smooth Grid Rows Height Transition Content */}
+            \{" "}
             <div
               className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${
                 isActive
@@ -79,4 +77,3 @@ const Accordion = ({ items }: AccordionProps) => {
 };
 
 export default Accordion;
-

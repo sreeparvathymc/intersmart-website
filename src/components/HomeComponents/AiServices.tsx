@@ -15,7 +15,6 @@ const AiServices = () => {
         />
 
         <div className="w-full flex flex-wrap  justify-between my-8 sm:my-10 md:my-14">
-          {/* Left Illustration Graphic */}
           <div className=" flex  items-center xl:w-[calc(100%_-690px)] md:w-[45%]  w-[80%] mx-auto md:mx-0 mb-5 md:mb-0">
             <div className="relative w-full ">
               <Image
@@ -29,20 +28,18 @@ const AiServices = () => {
             </div>
           </div>
 
-          {/* Right Accordion List */}
           <div className="xl:w-[557px] md:w-[54%]">
             <AccordionServices />
           </div>
         </div>
 
-        {/* View All Services Button */}
         <div className="mt-8 sm:mt-12 flex justify-center">
           <Button
-  text="View all services"
-  link="/"
-  varient="primary"
-  className="md:px-6 md:py-3 font-medium py-2.5 px-4 md:text-sm xl:text-base text-sm min-[320px]:max-[401px]:text-[12px]"
-/>
+            text="View all services"
+            link="/"
+            varient="primary"
+            className="md:px-6 md:py-3 font-medium py-2.5 px-4 md:text-sm xl:text-base text-sm min-[320px]:max-[401px]:text-[12px]"
+          />
         </div>
       </div>
     </section>
@@ -50,4 +47,3 @@ const AiServices = () => {
 };
 
 export default AiServices;
-

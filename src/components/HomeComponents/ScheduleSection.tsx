@@ -1,5 +1,4 @@
 import Button from "../ReusableComponents/Buttons/Button";
-import SectionIntro from "../ReusableComponents/Sections/SectionIntro";
 
 const ScheduleSection = () => {
   return (
@@ -36,8 +35,7 @@ const ScheduleSection = () => {
               </div>
 
               <Button text="Submit" varient="primary" type="submit" className="cursor-pointer
-              px-10 py-3
-                           py-2.5 md:py-3 md:text-sm  xl:text-base text-sm  min-[320px]:max-[401px]:text-[12px]
+              px-10 py-3 py-2.5 md:py-3 md:text-sm  xl:text-base text-sm  min-[320px]:max-[401px]:text-[12px]
 
               " />
             </form>

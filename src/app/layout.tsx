@@ -21,17 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-<body suppressHydrationWarning className={`${poppins.className} antialiased min-h-screen flex flex-col`}
->        <Header />
-        <main className=" relative overflow-hidden">
-
-          {children}
-
-        </main>
-
+      <body
+        suppressHydrationWarning
+        className={`${poppins.className} antialiased min-h-screen flex flex-col`}
+      >
+        {" "}
+        <Header />
+        <main className=" relative overflow-hidden">{children}</main>
         <Footer />
       </body>
     </html>
-
   );
 }

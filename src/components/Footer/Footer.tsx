@@ -53,11 +53,16 @@ const Footer = () => {
             </div>
 
             <div className="md:pl-10 my-5">
-              <h3 className="text-lg md:text-xl lg:text-2xl  font-medium md:mb-5 lg:mb-7 mb-2">Pages</h3>
+              <h3 className="text-lg md:text-xl lg:text-2xl  font-medium md:mb-5 lg:mb-7 mb-2">
+                Pages
+              </h3>
 
               <ul className="flex gap-x-6 gap-y-2 md:gap-x-0 md:gap-y-0 md:flex-col flex-wrap">
                 {pages.map((page) => (
-                  <li key={page.name} className="text-sm md:text-sm lg:text-base font-normal mb-0  md:mb-4 lg:mb-6">
+                  <li
+                    key={page.name}
+                    className="text-sm md:text-sm lg:text-base font-normal mb-0  md:mb-4 lg:mb-6"
+                  >
                     <Link
                       className="transition-all duration-300 hover:opacity-50"
                       href={page.href}
@@ -71,18 +76,23 @@ const Footer = () => {
           </div>
 
           <div className="w-full md:w-[218px]">
-            <h3 className="text-lg md:text-xl lg:text-2xl font-medium md:mb-5 lg:mb-7 mb-2">Stay connected</h3>
+            <h3 className="text-lg md:text-xl lg:text-2xl font-medium md:mb-5 lg:mb-7 mb-2">
+              Stay connected
+            </h3>
 
             <ul className="flex flex-wrap gap-2 ss-icons">
               {socialMediaLinks.map((social) => (
                 <li key={social.name}>
-                  <Link href={social.href}   className="transition-all duration-[1s] ease-in-out">
+                  <Link
+                    href={social.href}
+                    className="transition-all duration-[1s] ease-in-out"
+                  >
                     <Image
                       src={social.icon}
                       alt={social.name}
                       width={40}
                       height={40}
-                       className="transition-transform duration-[1s] ease-in-out hover:rotate-[360deg]"
+                      className="transition-transform duration-[1s] ease-in-out hover:rotate-[360deg]"
                     />
                   </Link>
                 </li>
@@ -101,7 +111,10 @@ const Footer = () => {
           <div className="w-full md:w-fit mt-3 md:mt-0 policy-list">
             <ul className="flex flex-wrap justify-center md:justify-start">
               {privacy.map((priv) => (
-                <li className="relative  min-[320px]:max-[3700px]:px-[6px] px-[10px]" key={priv.name}>
+                <li
+                  className="relative  min-[320px]:max-[3700px]:px-[6px] px-[10px]"
+                  key={priv.name}
+                >
                   <Link
                     className=" min-[320px]:max-[3700px]:text-[12px]    text-sm  md:text-sm lg:text-base transition-all duration-300 hover:opacity-50 font-normal text-base after:content-[''] after:absolute after:w-px after:h-[15px] after:bg-white after:right-0 after:bottom-[3px]"
                     href={priv.href}
