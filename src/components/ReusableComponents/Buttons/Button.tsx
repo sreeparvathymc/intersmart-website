@@ -18,23 +18,23 @@ const Button = ({
   const styles = {
     primary: "bg-black text-white border border-black hover:bg-white hover:text-black",
 
-    secondary: "bg-white text-black hover:bg-black hover:text-white",
+    secondary: "bg-white text-black hover:bg-gray-200",
   };
 
   const buttonClass = varient
-    ? `${styles[varient]} px-4 py-2 rounded-full ${className}`
+    ? `${styles[varient]} rounded-full ${className}`
     : `px-4 py-2 rounded-full ${className}`;
 
   if (link) {
     return (
-      <Link href={link} className={`${buttonClass} text-base py-3 px-8`}>
+      <Link href={link} className={`${buttonClass} text-base`}>
         {text}
       </Link>
     );
   }
 
   return (
-    <button type={type} className={`${buttonClass} text-base py-3 px-8`}>
+    <button type={type} className={`${buttonClass} text-base `}>
       {text}
     </button>
   );
