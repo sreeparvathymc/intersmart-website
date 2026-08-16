@@ -15,9 +15,8 @@ const Banner = () => {
 
 
 
-      <div className="absolute top-0 left-0 z-10 h-ful">
+      <div className="absolute top-0 left-0 z-10 w-full h-full">
          <BannerSlider />
-
       </div>
 
 
