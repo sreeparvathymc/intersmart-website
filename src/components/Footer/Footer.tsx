@@ -34,7 +34,7 @@ const Footer = () => {
     <footer className=" py-[54px] md:py-16 xl:py-25  bg-darkblue text-white">
       <div className="container-custom">
         <div className="flex flex-wrap">
-          <div className=" w-full md:w-[calc(100%-200px)]  grid grid-cols-1 md:grid-cols-2">
+          <div className=" w-full md:w-[calc(100%-218px)]  grid grid-cols-1 md:grid-cols-2">
             <div>
               <h3 className=" text-lg md:text-xl lg:text-2xl  font-medium mb-2 md:mb-5 lg:mb-7">
                 Services
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-[200px]">
+          <div className="w-full md:w-[218px]">
             <h3 className="text-lg md:text-xl lg:text-2xl font-medium md:mb-5 lg:mb-7 mb-2">Stay connected</h3>
 
             <ul className="flex flex-wrap gap-2 ss-icons">

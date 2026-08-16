@@ -7,7 +7,7 @@ import SectionIntro from "../ReusableComponents/Sections/SectionIntro";
 
 const RecentProject = () => {
   return (
-    <div className="py-[54px] md:py-16 xl:py-25 text-black">
+    <div className="py-[54px] md:py-[75px] xl:py-25 text-black">
 
 
       <div className="container-custom">
@@ -21,30 +21,32 @@ const RecentProject = () => {
 
 
 
-      <div className="recent-grid grid gap-6 grid-cols-2 pl-[15%] w-full mb-9">
-        <div className="recentimg-cover">
+      <div className="recent-grid grid gap-2 md:gap-6 grid-cols-2 2xl:pl-[15%] md:w-[94%] 2xl:w-full mx-auto 2xl:mx-0 mb-9 min-[320px]:max-[767px]:px-5">
+        <div className="recentimg-cover overflow-hidden rounded-[8px] ">
           <Image
             src={image1}
             alt="recentprojectimg1"
             width={500}
             height={300}
-            className="object-cover rounded-xl"
+            className="object-cover  overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110"
           />
         </div>
 
-        <div className="recentimg-cover">
+        <div className="recentimg-cover overflow-hidden rounded-[8px] ">
           <Image
             src={image2}
             alt="recentprojectimg2"
             width={500}
             height={300}
-            className="object-cover rounded-xl"
+            className="object-cover  overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110"
           />
         </div>
       </div>
 
       <div>
-        <Button className="mx-auto block w-fit" text="View all projects"  varient="primary" link="#" />
+        <Button className="mx-auto block w-fit md:py-3 md:px-6 py-2.5 px-5 md:text-base text-sm min-[320px]:max-[400px]:text-[12px]   " text="View all projects"  varient="primary" link="#"
+
+         />
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const AiServices = () => {
           </div>
 
           {/* Right Accordion List */}
-          <div className="xl:w-[592px] md:w-[54%]">
+          <div className="xl:w-[557px] md:w-[54%]">
             <AccordionServices />
           </div>
         </div>
@@ -38,11 +38,11 @@ const AiServices = () => {
         {/* View All Services Button */}
         <div className="mt-8 sm:mt-12 flex justify-center">
           <Button
-            text="View all services"
-            link="/"
-            varient="primary"
-            className="px-6 py-3 text-sm sm:text-base font-medium"
-          />
+  text="View all services"
+  link="/"
+  varient="primary"
+  className="md:px-6 md:py-3 font-medium py-2.5 px-4 md:text-sm xl:text-base text-sm min-[320px]:max-[401px]:text-[12px]"
+/>
         </div>
       </div>
     </section>

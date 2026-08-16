@@ -8,7 +8,7 @@ const SectionIntro = ({ introTitle, introText, textclass = "" }: IntroProps) => 
   return (
     <div className="intro-sec text-center">
       {introTitle && (
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 sm:mb-4 text-[#151827]">
+        <h2 className="text-2xl  md:text-3xl lg:text-4xl font-medium mb-3 sm:mb-4">
           {introTitle}
         </h2>
       )}
@@ -24,4 +24,4 @@ const SectionIntro = ({ introTitle, introText, textclass = "" }: IntroProps) => 
   );
 };
 
-export default SectionIntro;
+export default SectionIntro;

@@ -41,7 +41,7 @@ const Accordion = ({ items }: AccordionProps) => {
 
               {/* Arrow SVG Container */}
               <div
-                className={`w-4 h-4 flex items-center justify-center flex-shrink-0 transition-transform duration-300 ease-in-out ${
+                className={`w-3 h-3 flex items-center justify-center flex-shrink-0 transition-transform duration-300 ease-in-out ${
                   isActive ? "rotate-0" : "rotate-270"
                 }`}
               >
@@ -65,7 +65,7 @@ const Accordion = ({ items }: AccordionProps) => {
             >
               <div className="overflow-hidden">
                 <div className="px-5 pb-5 sm:px-8 sm:pb-6 lg:px-10 lg:pb-8">
-                  <p className="text-xs sm:text-sm md:text-sm  leading-relaxed sm:leading-[1.65] text-black">
+                  <p className="text-sm lg:text-base  leading-relaxed sm:leading-[1.65] text-black">
                     {item.content}
                   </p>
                 </div>
