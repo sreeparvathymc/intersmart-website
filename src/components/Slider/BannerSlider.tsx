@@ -6,22 +6,23 @@ const slides = [
     description:
       "One of the leading AI development companies in India with remarkable expertise in artificial intelligence solutions. Our forte in AI technologies spans diverse verticals like machine learning (ML)....",
     buttonText: "Reach us",
-    bgImage: "/images/banner-1.jpg",
+
   },
   {
-    title: "Build powerful AI solutions",
+    title: "AI development company in India 2",
     description:
-      "We help businesses build intelligent and scalable AI solutions using modern technologies and innovative approaches.",
-    buttonText: "Explore services",
-    bgImage: "/images/banner-2.jpg",
+      "One of the leading AI development companies in India with remarkable expertise in artificial intelligence solutions. Our forte in AI technologies spans diverse verticals like machine ",
+    buttonText: "Reach us",
+
   },
   {
-    title: "Transform your business with AI",
+    title: "AI development company in India 3",
     description:
-      "From machine learning to custom AI solutions, we create technology that helps businesses grow and improve.",
-    buttonText: "Contact us",
-    bgImage: "/images/banner-3.jpg",
+      "One of the leading AI development companies in India with remarkable expertise in artificial intelligence solutions. Our forte in AI technologies spans diverse verticals like machine learning (ML)....",
+    buttonText: "Reach us",
+
   },
+
 ];
 
 const BannerSlider = () => {

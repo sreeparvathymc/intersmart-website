@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Button from "../ReusableComponents/Buttons/Button";
 
 type Slide = {
   title: string;
   description: string;
-  buttonText: string;
-  bgImage: string;
+
+
 };
 
 type SliderProps = {
@@ -27,7 +28,18 @@ const Slider = ({ slides }: SliderProps) => {
   }, [slides.length]);
 
   return (
-    <section className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden">
+    //  h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px]
+    <section className="relative w-full
+
+      md:aspect-[16/10]
+      min-[320px]:max-[401px]:aspect-[16/19]
+
+            min-[401px]:max-[480px]:aspect-[16/15]
+
+
+      aspect-[16/10]
+
+      overflow-hidden">
       {slides.map((slide, index) => {
         const isActive = activeIndex === index;
 
@@ -39,30 +51,43 @@ const Slider = ({ slides }: SliderProps) => {
             }`}
           >
             {/* Slide Background Image overlay */}
-            {slide.bgImage && (
+            {/* {slide.bgImage && (
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay"
                 style={{
                   backgroundImage: `url(${slide.bgImage})`,
                 }}
               />
-            )}
+            )} */}
+
+
 
             {/* Slide Content */}
             <div className="relative z-10 flex h-full items-center pt-16 sm:pt-20 md:pt-24 pb-12">
               <div className="container-custom mx-auto px-4 sm:px-6 md:px-8">
-                <div className="max-w-[700px]">
-                  <h1 className="mb-3 sm:mb-5 lg:mb-6 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
+                <div className="max-w-[804px]">
+
+
+
+                  <h1 className="mb-3 sm:mb-5 lg:mb-6 text-2xl sm:text-4xl md:text-[40px] lg:text-6xl font-bold leading-tight text-white">
                     {slide.title}
                   </h1>
 
-                  <p className="mb-6 sm:mb-8 max-w-[600px] text-xs sm:text-base md:text-lg leading-relaxed text-gray-200">
+                  <p className="mb-6 sm:mb-8 max-w-[650px] leading-[24px] text-xs  md:text-base leading-relaxed text-gray-200">
                     {slide.description}
                   </p>
 
-                  <button className="rounded-full bg-white px-5 py-2.5 sm:px-8 sm:py-3.5 text-xs sm:text-base font-semibold text-black transition hover:bg-gray-200 shadow-md">
-                    {slide.buttonText}
-                  </button>
+
+
+                  <Button
+                  text=" Reach us"
+                  varient="secondary"
+                  link="/"
+                  className=" py-2.5 md:py-3 px-5 md-px-4 font-medium md:text-sm cursor-pointer text-sm  min-[320px]:max-[401px]:text-[12px]"
+                  />
+
+
+
                 </div>
               </div>
             </div>
@@ -78,10 +103,10 @@ const Slider = ({ slides }: SliderProps) => {
             type="button"
             onClick={() => setActiveIndex(index)}
             aria-label={`Go to slide ${index + 1}`}
-            className={`h-2 rounded-full transition-all ${
+            className={`h-2 w-2 rounded-full transition-all ${
               activeIndex === index
-                ? "w-6 sm:w-8 bg-white"
-                : "w-2 bg-white/50 hover:bg-white/75"
+                ? " bg-white"
+                : " bg-white/50 hover:bg-white/75"
             }`}
           />
         ))}
@@ -90,4 +115,4 @@ const Slider = ({ slides }: SliderProps) => {
   );
 };
 
-export default Slider;
+export default Slider;
