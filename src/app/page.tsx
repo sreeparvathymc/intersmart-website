@@ -7,10 +7,10 @@ import ScheduleSection from "@/components/HomeComponents/ScheduleSection";
 export default function Home() {
   return (
     <section>
-      <Banner />
+      {/* <Banner /> */}
       <AiServices />
 
-      {/* <AiDeveloperprocess /> */}
+      <AiDeveloperprocess />
 
       <ScheduleSection />
 

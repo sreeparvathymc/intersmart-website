@@ -10,7 +10,7 @@
 
 
 .container-custom {
-    @apply w-full max-w-[70%] mx-auto;
+    @apply w-full max-w-[100%] mx-auto;
   }
 
   @media (max-width: 767px) {
@@ -27,7 +27,7 @@
 
   @media (min-width: 1536px) {
     .container-custom {
-      @apply w-[70%] max-w-[100%];
+      @apply w-[100%] max-w-[1375px];
     }
   }
 

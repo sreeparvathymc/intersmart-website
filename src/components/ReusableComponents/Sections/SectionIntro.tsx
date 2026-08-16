@@ -10,7 +10,7 @@ const SectionIntro = ({ introTitle, introText,textclass ="" }: IntroProps) => {
 
       <h2 className="2xl:text-4xl font-medium mb-4 text-center">{introTitle}</h2>
 
-      <p className={`${textclass} text-center text-base font-normal mx-auto  mb-6`}>{introText}</p>
+      <p className={`${textclass} text-center text-base font-normal mx-auto leading-[28px]  mb-6`}>{introText}</p>
 
       <div className="bg-[#0393B0] w-[100px] h-[2px] mb-12 mx-auto"></div>
     </div>
