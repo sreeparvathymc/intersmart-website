@@ -83,7 +83,8 @@ const Slider = ({ slides }: SliderProps) => {
                   text=" Reach us"
                   varient="secondary"
                   link="/"
-                  className=" py-2.5 md:py-3 px-5 md-px-4 font-medium md:text-sm cursor-pointer text-sm  min-[320px]:max-[401px]:text-[12px]"
+                  className=" py-2.5 md:py-3 px-5 md-px-4 font-medium
+                  md:text-sm cursor-pointer xl:text-base text-sm  min-[320px]:max-[401px]:text-[12px]"
                   />
 
 
